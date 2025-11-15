@@ -1,0 +1,3 @@
+RewriteEngine On
+
+RewriteRule ^courses/([a-zA-Z0-9\-]+)$ courses.php?category_slug=$1 [L,QSA]

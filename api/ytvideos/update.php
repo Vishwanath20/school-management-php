@@ -1,0 +1,49 @@
+<?php
+require_once '../../config/database.php';
+header('Content-Type: application/json');
+
+try {
+    // Validate required fields
+    if (empty($_POST['id'])) throw new Exception('Video ID is required');
+    if (empty($_POST['title'])) throw new Exception('Title is required');
+    if (empty($_POST['subtitle'])) throw new Exception('Subtitle is required');
+    if (empty($_POST['youtube_url'])) throw new Exception('YouTube URL is required');
+    if (empty($_POST['youtube_id'])) throw new Exception('Invalid YouTube URL format');
+
+    // Update video
+    $stmt = $pdo->prepare("
+        UPDATE yt_videos SET 
+            title = ?,
+            subtitle = ?,
+            youtube_url = ?,
+            youtube_id = ?,
+            display_order = ?,
+            updated_at = NOW()
+        WHERE id = ?
+    ");
+
+    $result = $stmt->execute([
+        $_POST['title'],
+        $_POST['subtitle'],
+        $_POST['youtube_url'],
+        $_POST['youtube_id'],
+        isset($_POST['display_order']) ?$_POST['display_order']: 0,
+        $_POST['id']
+    ]);
+
+    if ($result) {
+        echo json_encode([
+            'status' => 'success',
+            'message' => 'Video updated successfully'
+        ]);
+    } else {
+        throw new Exception('Failed to update video');
+    }
+
+} catch (Exception $e) {
+    http_response_code(400);
+    echo json_encode([
+        'status' => 'error',
+        'message' => $e->getMessage()
+    ]);
+}
