@@ -1,6 +1,9 @@
 <?php
-require_once 'config/database.php';
-$alt="“computer course in sarangarh”, “DCA course in sarangarh”, “PGDCA course sarangarh”, “pre nursing test coaching in sarangarh”, “pre agriculture test coaching in sarangarh”";
+// require_once 'config/database.php';
+require_once __DIR__ . '/../config/database.php';
+
+$alt = "Evergreen public shcool logo"; 
+$baseUrl = "http://localhost/school-website-evergreen/";
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -47,7 +50,7 @@ if ($seo_data) {
     <!-- Font Awesome -->
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
     <!-- Custom CSS -->
-    <link rel="stylesheet" href="<?php getSeoData(); ?>style.css">
+    <link rel="stylesheet" href="<?php echo $baseUrl; ?>style.css">
     <!-- Owl Carousel -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css" rel="stylesheet">
@@ -57,6 +60,14 @@ if ($seo_data) {
     .btn-check:checked+.btn, .btn.active, .btn.show, .btn:first-child:active, :not(.btn-check)+.btn:active{
         background-color: #18c1e4 !important;
     }
+     .blink-text {
+        animation: blinker 1.2s linear infinite;
+    }
+
+    @keyframes blinker {
+        50% { opacity: 0; }
+    }
+    
     </style>
 </head>
 <body>
@@ -65,8 +76,14 @@ if ($seo_data) {
         <div class="container">
             <div class="row">
                 <div class="col-md-6 text-start">
-                    <span><i class="fas fa-phone-alt me-2"></i>+91 XXXXXXXXX</span>
-                    <span class="ms-3"><i class="fas fa-envelope me-2"></i>eps@gmail.com</span>
+                    <span><i class="fas fa-phone-alt me-2"></i>+91 99070 70186</span>
+                    <span class="ms-3"><i class="fas fa-envelope me-2"></i>info@epscg.in</span>
+                     <span class="ms-3">|</span>
+                    <span class="ms-2">
+                        <a href="<?php echo $baseUrl; ?>pages/public-disclosure.php" class="text-white text-decoration-none blink-text">
+                            Mandatory Public Disclosure
+                        </a>
+                    </span>
                 </div>
                 <div class="col-md-6 text-end">
                     <a href="#" class="text-white me-3"><i class="fab fa-facebook-f"></i></a>
@@ -81,8 +98,8 @@ if ($seo_data) {
     <!-- Navbar -->
     <nav class="navbar navbar-expand-lg navbar-light bg-white sticky-top shadow-sm">
         <div class="container">
-            <a class="navbar-brand" href="<?php getSeoData(); ?>index.php">
-                <img src="<?php getSeoData(); ?>uploads/logo/eps-logo.jpeg" alt="<?php echo htmlspecialchars($alt); ?>" class="logo" >
+            <a class="navbar-brand" href="<?php echo $baseUrl; ?>index.php">
+                <img src="<?php echo $baseUrl; ?>uploads/logo/eps-logo.jpeg" alt="<?php echo htmlspecialchars($alt); ?>" class="logo" >
                     <!-- <h2 class="m-0 text-primary">Margdarshan<span class="text-secondary">Coaching</span></h2> -->
             </a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
@@ -91,30 +108,128 @@ if ($seo_data) {
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav ms-auto">
                     <li class="nav-item">
-                    <a class="nav-link active" href="#">Home</a>
+                    <a class="nav-link active" href="<?php echo $baseUrl; ?>index.php">Home</a>
                         <!-- <a class="nav-link active" href="/index.php">Home</a> -->
                     </li>
                    
-                    <li class="nav-item">
+                    <!-- <li class="nav-item">
                         <a class="nav-link" href="index.php#faculty">Faculty</a>
-                        <!-- <a class="nav-link active" href="#">Faculty</a> -->
-                    </li>
+                        
+                    </li> -->
                     <!-- <li class="nav-item">
                         <a class="nav-link" href="freeresources.php">Free Resources</a>
                     </li> -->
                     <li class="nav-item">
                     <!-- <a class="nav-link" href="#">Gallery</a> -->
-                        <a class="nav-link" href="photo-galery.php">Gallery</a>
+                        <a class="nav-link" href="<?php echo $baseUrl; ?>photo-galery.php">Gallery</a>
                     </li>
                     <!-- <li class="nav-item">
                         <a class="nav-link" href="#blog">Blog</a>
                     </li> -->
                     <li class="nav-item">
-                        <a class="nav-link" href="contact-us.php">Contact US</a>
+                        <a class="nav-link" href="<?php echo $baseUrl; ?>contact-us.php">Contact US</a>
                     </li>
-                    <li class="nav-item">
+                    <!-- <li class="nav-item">
                         <a class="nav-link" href="about-us.php">About Us</a>
+                    </li> -->
+
+                    <!-- About dropdown start-->
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="aboutDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            About
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="aboutDropdown">
+                            <li><a class="dropdown-item" href="<?php echo $baseUrl; ?>pages/about/about-us.php">About Us</a></li>
+                            <li><a class="dropdown-item" href="<?php echo $baseUrl; ?>pages/about/mission.php">Mission</a></li>
+                            <li><a class="dropdown-item" href="<?php echo $baseUrl; ?>pages/about/vision.php">Vision</a></li>
+                            <li><a class="dropdown-item" href="<?php echo $baseUrl; ?>pages/about/overview.php">Overview</a></li>
+                            <li><a class="dropdown-item" href="<?php echo $baseUrl; ?>pages/about/priciple-message.php">Priciple's message</a></li>
+                            <li><a class="dropdown-item" href="<?php echo $baseUrl; ?>pages/about/director-message.php">Director's message</a></li>
+                        </ul>
                     </li>
+
+                    <!-- About dropdown end -->
+
+                    <!-- Academic dropdown start-->
+                    <li class="nav-item dropdown">
+    <a class="nav-link dropdown-toggle" href="#" id="academicDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+        Academics
+    </a>
+
+    <ul class="dropdown-menu" aria-labelledby="academicDropdown">
+
+        <li><a class="dropdown-item" href="<?php echo $baseUrl; ?>pages/academics/achievement.php">Achievements</a></li>
+        <li><a class="dropdown-item" href="<?php echo $baseUrl; ?>pages/academics/search-tc.php">Search TC</a></li>
+        <li><a class="dropdown-item" href="<?php echo $baseUrl; ?>pages/academics/high-school.php">High School</a></li>
+        <li><a class="dropdown-item" href="<?php echo $baseUrl; ?>pages/academics/middle-wing.php">Middle Wing</a></li>
+        <li><a class="dropdown-item" href="<?php echo $baseUrl; ?>pages/academics/pre-primary-wing.php">Pre Primary Wing</a></li>
+        <li><a class="dropdown-item" href="<?php echo $baseUrl; ?>pages/academics/primary-wing.php">Primary Wing</a></li>
+
+    </ul>
+</li>
+
+                    <!-- Academin dropdown end -->
+
+                     <!-- our team dropdown start -->
+
+                    <li class="nav-item dropdown">
+    <a class="nav-link dropdown-toggle" href="#" id="teamDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+        Our Team
+    </a>
+
+    <ul class="dropdown-menu" aria-labelledby="teamDropdown">
+
+        <li>
+            <a class="dropdown-item" href="<?php echo $baseUrl; ?>pages/our-team/administrative-staff.php">
+                Administrative Staff
+            </a>
+        </li>
+
+        <li>
+            <a class="dropdown-item" href="<?php echo $baseUrl; ?>pages/our-team/faculty.php">
+                Faculty
+            </a>
+        </li>
+
+    </ul>
+</li>
+
+  <!-- our team dropdown end -->
+
+  <!-- admission dropdown start -->
+  <li class="nav-item dropdown">
+    <a class="nav-link dropdown-toggle" href="#" id="admissionDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+        Admission
+    </a>
+
+    <ul class="dropdown-menu" aria-labelledby="admissionDropdown">
+
+        <li>
+            <a class="dropdown-item" href="<?php echo $baseUrl; ?>pages/admission/procedure.php">
+                Admission Procedure
+            </a>
+        </li>
+
+
+    </ul>
+</li>
+    <!-- admission dropdown end -->    
+     
+    <!-- Rules dropdown start-->
+    <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" id="rulesDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Rules
+        </a>
+         <ul class="dropdown-menu" aria-labelledby="rulesDropdown">
+            <li>
+              <a class="dropdown-item" href="<?php echo $baseUrl; ?>pages/rules/feec-strucure.php">Fee Structure</a>
+            </li>
+         <!-- <li><a class="dropdown-item" href="<?php echo $baseUrl; ?>pages/rules/school-timing.php">School Timing</a></li> -->
+        </ul>
+    </li>
+
+                    <!-- Rules dropdown end -->
+
                 </ul>
                 <!-- <?php if (isset($_SESSION['user_id'])): ?>
                     <div class="dropdown ms-3">

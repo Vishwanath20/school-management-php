@@ -4,6 +4,9 @@ require_once('../../config/database.php');
 if(!isset($_SESSION['admin_logged_in'])){
     header("location:../index.php");
 }
+
+$baseUrl = "http://localhost/school-website-evergreen/";
+
 ?>
 <head>
     <!-- Required meta tags -->
@@ -35,15 +38,15 @@ if(!isset($_SESSION['admin_logged_in'])){
       <!-- partial:partials/_sidebar.html -->
       <nav class="sidebar sidebar-offcanvas" id="sidebar">
         <div class="sidebar-brand-wrapper d-none d-lg-flex align-items-center justify-content-center fixed-top">
-          <a class="sidebar-brand brand-logo" href="../dashboard/dashboard.php" style="color:#fff;">Margdarshan</a>
-          <a class="sidebar-brand brand-logo-mini" href="../dashboard/dashboard.php" style="color:#fff;">M.D.</a>
+          <a class="sidebar-brand brand-logo" href="../dashboard/dashboard.php" style="color:#fff;">Evergreen Public School</a>
+          <a class="sidebar-brand brand-logo-mini" href="../dashboard/dashboard.php" style="color:#fff;">EPS.</a>
         </div>
         <ul class="nav">
   <li class="nav-item profile">
     <div class="profile-desc">
       <div class="profile-pic">
         <div class="count-indicator">
-          <img class="img-xs rounded-circle" src="../../uploads/profile_pics/<?php echo $_SESSION['profile_pic'] ?>" alt="">
+          <img class="img-xs rounded-circle" src="<?php echo $baseUrl; ?>uploads/logo/eps-logo.jpeg" alt="">
           <span class="count bg-success"></span>
         </div>
         <div class="profile-name">
@@ -63,7 +66,9 @@ if(!isset($_SESSION['admin_logged_in'])){
       <span class="menu-title">Dashboard</span>
     </a>
   </li>
-  <li class="nav-item menu-items">
+
+  <!-- Masters Management - start -->
+  <!-- <li class="nav-item menu-items">
     <a class="nav-link" data-toggle="collapse" href="#masters" aria-expanded="false" aria-controls="masters">
       <span class="menu-icon">
         <i class="mdi mdi-database"></i>
@@ -79,7 +84,8 @@ if(!isset($_SESSION['admin_logged_in'])){
          <li class="nav-item"> <a class="nav-link" href="../photogalerycategory/details.php" title="Photo Galery Category">P.G.C.</a></li>
       </ul>
     </div>
-  </li>
+  </li> -->
+    <!-- Masters Management - end -->
   
   <li class="nav-item menu-items">
     <a class="nav-link" data-toggle="collapse" href="#websitemanage" aria-expanded="false" aria-controls="websitemanage">
@@ -91,20 +97,22 @@ if(!isset($_SESSION['admin_logged_in'])){
     </a>
     <div class="collapse hide" id="websitemanage">
       <ul class="nav flex-column sub-menu">
-        <li class="nav-item"> <a class="nav-link" href="../heroslider/details.php"> Manage Banners</a></li>
+        <!-- <li class="nav-item"> <a class="nav-link" href="../heroslider/details.php"> Manage Banners</a></li>
         <li class="nav-item"> <a class="nav-link" href="../noticeboard/details.php"> Manage Notice Board</a></li>
         <li class="nav-item"> <a class="nav-link" href="../Courses/details.php"> Manage Courses</a></li>
         <li class="nav-item"> <a class="nav-link" href="../whychooseus/details.php"> Why Choose</a></li>
         <li class="nav-item"> <a class="nav-link" href="../toppersreviews/details.php"> Toppers Reviews</a></li>
         <li class="nav-item"> <a class="nav-link" href="../faculty/details.php"> Manage Faculty</a></li>
         <li class="nav-item"> <a class="nav-link" href="../ytvideos/details.php"> Manage YT Videos</a></li>
-        <li class="nav-item"> <a class="nav-link" href="../upcomingexams/details.php"> Manage Upcoming Exams</a></li>
+        <li class="nav-item"> <a class="nav-link" href="../upcomingexams/details.php"> Manage Upcoming Exams</a></li> -->
         <li class="nav-item"> <a class="nav-link" href="../contactdetails/details.php"> Manage Contact Details</a></li>
         <li class="nav-item"> <a class="nav-link" href="../photogalery/details.php"> Manage Photo Gallery</a></li>
       </ul>
     </div>
   </li>
-  <li class="nav-item menu-items">
+
+  <!-- Leads Management - start -->
+  <!-- <li class="nav-item menu-items">
     <a class="nav-link" data-toggle="collapse" href="#manageleads" aria-expanded="false" aria-controls="manageleads">
       <span class="menu-icon">
         <i class="mdi mdi-lead-pencil"></i>
@@ -117,8 +125,11 @@ if(!isset($_SESSION['admin_logged_in'])){
         <li class="nav-item"> <a class="nav-link" href="../leadsmanagement/details.php">Manage Leads</a></li>
       </ul>
     </div>
-  </li>
-    <li class="nav-item menu-items">
+  </li> -->
+   <!-- Leads Management - end -->
+
+  <!-- Staff-mamangemtn start-->
+    <!-- <li class="nav-item menu-items">
     <a class="nav-link" data-toggle="collapse" href="#ui-basic" aria-expanded="false" aria-controls="ui-basic">
       <span class="menu-icon">
         <i class="mdi mdi-account-group"></i>
@@ -133,8 +144,11 @@ if(!isset($_SESSION['admin_logged_in'])){
         <li class="nav-item"> <a class="nav-link" href="../users/salary.php"> Salary</a></li>
       </ul>
     </div>
-  </li>
-<li class="nav-item menu-items">
+  </li> -->
+    <!-- Staff-mamangemtn end-->
+
+      <!-- SEO Tool - start -->
+<!-- <li class="nav-item menu-items">
     <a class="nav-link" data-toggle="collapse" href="#webseo" aria-expanded="false" aria-controls="webseo">
       <span class="menu-icon">
         <i class="mdi mdi-magnify"></i>
@@ -147,7 +161,9 @@ if(!isset($_SESSION['admin_logged_in'])){
         <li class="nav-item"> <a class="nav-link" href="../seo/webseo.php"><i class="mdi mdi-search-web"></i> Web SEO</a></li>
       </ul>
     </div>
-  </li>
+  </li> -->
+    <!-- SEO Tool - end -->
+
 </ul>
       </nav>
       <!-- partial -->
@@ -167,7 +183,7 @@ if(!isset($_SESSION['admin_logged_in'])){
               <li class="nav-item dropdown">
                 <a class="nav-link" id="profileDropdown" href="#" data-toggle="dropdown">
                   <div class="navbar-profile">
-                    <img class="img-xs rounded-circle" src="../../uploads/profile_pics/<?php echo $_SESSION['profile_pic'] ?>" alt="">
+                    <img class="img-xs rounded-circle" src="<?php echo $baseUrl; ?>uploads/logo/eps-logo.jpeg" alt="">
                     <p class="mb-0 d-none d-sm-block navbar-profile-name text-white"><?php echo $_SESSION['name']; ?></p>
                     <i class="mdi mdi-menu-down d-none d-sm-block"></i>
                   </div>
