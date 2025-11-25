@@ -1,5 +1,5 @@
 <?php
-require_once 'config/database.php';
+require_once __DIR__ . '/../config/database.php';
 ?>
 <!-- Footer -->
     <footer  data-aos="fade-up"
@@ -8,7 +8,7 @@ require_once 'config/database.php';
             <div class="row">
                 <div class="col-lg-3 col-md-6 mb-5">
                     <!-- <h2 class="text-white mb-4">GEO<span class="text-accent">IAS</span></h2> -->
-                    <img src="<?php getSeoData(); ?>uploads/logo/eps-logo.jpeg" alt="<?php echo $alt; ?>" class="logo" style="height:120px;
+                    <img src="<?php echo $baseUrl; ?>uploads/logo/eps-logo.jpeg" alt="<?php echo $alt; ?>" class="logo" style="height:120px;
     background: #fff;
     border-radius: 10px;
 }" >
@@ -100,4 +100,4 @@ require_once 'config/database.php';
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Counter-Up/1.0.0/jquery.counterup.min.js"></script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.7.32/dist/sweetalert2.all.min.js"></script>
-    <script src="<?php getSeoData(); ?>script.js"></script>
+    <script src="<?php echo $baseUrl; ?>script.js"></script>

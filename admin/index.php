@@ -10,7 +10,7 @@ if(isset($_SESSION['admin_logged_in']) && $_SESSION['admin_logged_in'] === true)
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Admin Login - GEO IAS</title>
+    <title>Admin Login </title>
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
     <!-- Toastr CSS -->
@@ -68,7 +68,7 @@ if(isset($_SESSION['admin_logged_in']) && $_SESSION['admin_logged_in'] === true)
     <div class="container">
         <div class="login-container">
             <div class="login-header">
-                <h1>Margdarshan Admin</h1>
+                <h1>School Admin</h1>
                 <p>Please login to continue</p>
             </div>
             <!-- In the form section, add capture button -->
