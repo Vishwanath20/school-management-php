@@ -8,7 +8,11 @@ require_once __DIR__ . '/../config/database.php';
             <div class="row">
                 <div class="col-lg-3 col-md-6 mb-5">
                     <!-- <h2 class="text-white mb-4">GEO<span class="text-accent">IAS</span></h2> -->
+<<<<<<< HEAD
                     <img src="<?php echo $baseUrl; ?>uploads/logo/eps-logo.png" alt="<?php echo $alt; ?>" class="logo" style="height:120px;
+=======
+                    <img src="<?php echo $baseUrl; ?>uploads/logo/eps-logo.jpeg" alt="<?php echo $alt; ?>" class="logo" style="height:120px;
+>>>>>>> 6abbaba483fe6d59ed34b4cf07ff7cda494b01e9
     background: #fff;
     border-radius: 10px;
 }" >

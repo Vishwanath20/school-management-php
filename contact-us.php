@@ -14,8 +14,8 @@ $leads = isset($_GET['source']) ? $_GET['source'] : 'web';
                         <i class="fas fa-map-marker-alt contact-icon"></i>
                         <div>
                             <h4>Office</h4>
-                            <p>Andola, Jashpur, Sarangarh</p>
-                            <!-- <p><?php echo htmlspecialchars($contactDetails['address']); ?></p> -->
+                            <!-- <p>Andola, Jashpur, Sarangarh</p> -->
+                            <p><?php echo htmlspecialchars($contactDetails['address']); ?></p>
                         </div>
                     </div>
                     <div class="contact-item">

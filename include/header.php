@@ -3,7 +3,11 @@
 require_once __DIR__ . '/../config/database.php';
 
 $alt = "Evergreen public shcool logo"; 
+<<<<<<< HEAD
 $baseUrl = "http://localhost/school-website-demo/";
+=======
+$baseUrl = "http://localhost/school-website-evergreen/";
+>>>>>>> 6abbaba483fe6d59ed34b4cf07ff7cda494b01e9
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -72,16 +76,24 @@ if ($seo_data) {
     .btn-check:checked+.btn, .btn.active, .btn.show, .btn:first-child:active, :not(.btn-check)+.btn:active{
         background-color: #18c1e4 !important;
     }
+<<<<<<< HEAD
 
     .blink-text {
+=======
+     .blink-text {
+>>>>>>> 6abbaba483fe6d59ed34b4cf07ff7cda494b01e9
         animation: blinker 1.2s linear infinite;
     }
 
     @keyframes blinker {
         50% { opacity: 0; }
     }
+<<<<<<< HEAD
 
 
+=======
+    
+>>>>>>> 6abbaba483fe6d59ed34b4cf07ff7cda494b01e9
     </style>
 </head>
 <body>
@@ -90,9 +102,15 @@ if ($seo_data) {
         <div class="container">
             <div class="row">
                 <div class="col-md-6 text-start">
+<<<<<<< HEAD
                     <span><i class="fas fa-phone-alt me-2"></i>+91 XXXXXXXXX</span>
                     <span class="ms-3"><i class="fas fa-envelope me-2"></i>eps@gmail.com</span>
                     <span class="ms-3">|</span>
+=======
+                    <span><i class="fas fa-phone-alt me-2"></i>+91 99070 70186</span>
+                    <span class="ms-3"><i class="fas fa-envelope me-2"></i>info@epscg.in</span>
+                     <span class="ms-3">|</span>
+>>>>>>> 6abbaba483fe6d59ed34b4cf07ff7cda494b01e9
                     <span class="ms-2">
                         <a href="<?php echo $baseUrl; ?>pages/public-disclosure.php" class="text-white text-decoration-none blink-text">
                             Mandatory Public Disclosure
@@ -113,7 +131,11 @@ if ($seo_data) {
     <nav class="navbar navbar-expand-lg navbar-light bg-white sticky-top shadow-sm">
         <div class="container">
             <a class="navbar-brand" href="<?php echo $baseUrl; ?>index.php">
+<<<<<<< HEAD
                 <img src="<?php echo $baseUrl; ?>uploads/logo/eps-logo.png" alt="<?php echo htmlspecialchars($alt); ?>" class="logo" >
+=======
+                <img src="<?php echo $baseUrl; ?>uploads/logo/eps-logo.jpeg" alt="<?php echo htmlspecialchars($alt); ?>" class="logo" >
+>>>>>>> 6abbaba483fe6d59ed34b4cf07ff7cda494b01e9
                     <!-- <h2 class="m-0 text-primary">Margdarshan<span class="text-secondary">Coaching</span></h2> -->
             </a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
@@ -123,8 +145,21 @@ if ($seo_data) {
                 <ul class="navbar-nav ms-auto">
                     <li class="nav-item">
                     <a class="nav-link active" href="<?php echo $baseUrl; ?>index.php">Home</a>
+<<<<<<< HEAD
                      
                     </li>
+=======
+                        <!-- <a class="nav-link active" href="/index.php">Home</a> -->
+                    </li>
+                   
+                    <!-- <li class="nav-item">
+                        <a class="nav-link" href="index.php#faculty">Faculty</a>
+                        
+                    </li> -->
+                    <!-- <li class="nav-item">
+                        <a class="nav-link" href="freeresources.php">Free Resources</a>
+                    </li> -->
+>>>>>>> 6abbaba483fe6d59ed34b4cf07ff7cda494b01e9
                     <li class="nav-item">
                     <!-- <a class="nav-link" href="#">Gallery</a> -->
                         <a class="nav-link" href="<?php echo $baseUrl; ?>photo-galery.php">Gallery</a>
@@ -165,7 +200,10 @@ if ($seo_data) {
     <ul class="dropdown-menu" aria-labelledby="academicDropdown">
 
         <li><a class="dropdown-item" href="<?php echo $baseUrl; ?>pages/academics/achievement.php">Achievements</a></li>
+<<<<<<< HEAD
 
+=======
+>>>>>>> 6abbaba483fe6d59ed34b4cf07ff7cda494b01e9
         <li><a class="dropdown-item" href="<?php echo $baseUrl; ?>pages/academics/search-tc.php">Search TC</a></li>
         <li><a class="dropdown-item" href="<?php echo $baseUrl; ?>pages/academics/high-school.php">High School</a></li>
         <li><a class="dropdown-item" href="<?php echo $baseUrl; ?>pages/academics/middle-wing.php">Middle Wing</a></li>
@@ -217,6 +255,7 @@ if ($seo_data) {
             </a>
         </li>
 
+<<<<<<< HEAD
         <!-- <li>
             <a class="dropdown-item" href="<?php echo $baseUrl; ?>pages/admission/main.php">
                 Registration – DPS Main
@@ -247,6 +286,25 @@ if ($seo_data) {
        
     </ul>
 </li>
+=======
+
+    </ul>
+</li>
+    <!-- admission dropdown end -->    
+     
+    <!-- Rules dropdown start-->
+    <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" id="rulesDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Rules
+        </a>
+         <ul class="dropdown-menu" aria-labelledby="rulesDropdown">
+            <li>
+              <a class="dropdown-item" href="<?php echo $baseUrl; ?>pages/rules/feec-strucure.php">Fee Structure</a>
+            </li>
+         <!-- <li><a class="dropdown-item" href="<?php echo $baseUrl; ?>pages/rules/school-timing.php">School Timing</a></li> -->
+        </ul>
+    </li>
+>>>>>>> 6abbaba483fe6d59ed34b4cf07ff7cda494b01e9
 
                     <!-- Rules dropdown end -->
 

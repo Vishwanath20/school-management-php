@@ -12,7 +12,6 @@ $institute = $stmt->fetch();
 include  '../../include/header.php';
 ?>
 
-
 <!-- Vision Mission Section -->
 <section class="py-5">
     <div class="container">
