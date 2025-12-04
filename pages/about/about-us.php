@@ -19,14 +19,14 @@ include  '../../include/header.php';
             <div class="col-lg-6">
                <h1>Welcome to Evergreen public shcool</h1>
 
-<p>
-At <strong>Evergreen public shcool</strong>, we are committed to guiding students towards a brighter future through <strong>quality education</strong>, <strong>expert mentorship</strong>, and <strong>practical learning</strong>. Recognized as a <strong>trusted coaching center in Sarangarh</strong>, our goal is to empower students with the knowledge and skills they need to succeed in academics, <strong>competitive exams</strong>, and their professional careers.
-</p>
+                <p>
+                At <strong>Evergreen public shcool</strong>, we are committed to guiding students towards a brighter future through <strong>quality education</strong>, <strong>expert mentorship</strong>, and <strong>practical learning</strong>. Recognized as a <strong>trusted coaching center in Sarangarh</strong>, our goal is to empower students with the knowledge and skills they need to succeed in academics, <strong>competitive exams</strong>, and their professional careers.
+                </p>
 
             </div>
             <div class="col-lg-6">
                 <!-- <img src="uploads/aboutus/about-margdarshan.jpg" alt="<?php echo htmlspecialchars($alt); ?>" class="img-fluid rounded-3 shadow"> -->
-                 <img src="uploads/aboutus/office.jfif" alt="Evergreen principle image with office" class="img-fluid rounded-3 shadow">
+                 <img src="../../uploads/aboutus/about-us.png" alt="Evergreen principle image with office" class="hero-section-image" >
             </div>
         </div>
     </div>
@@ -104,9 +104,9 @@ At <strong>Evergreen public shcool</strong>, we are committed to guiding student
 </section> -->
 
 <style>
-.hero-section {
+/* /* .hero-section {
     background: linear-gradient(45deg, #2d87b4, #3399cc);
-}
+} */ */
 
 .card {
     transition: transform 0.3s ease;

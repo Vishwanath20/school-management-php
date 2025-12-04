@@ -140,7 +140,7 @@ $newsEvents = $stmt->fetchAll();
 
 
 <!-- Notice Board Section -->
-<section class="notice-board-section py-5 bg-light" data-aos="fade-up">
+<!-- <section class="notice-board-section py-5 bg-light" data-aos="fade-up">
     <div class="container">
         <div class="row">
             <div class="col-md-6 Announcementsec">
@@ -159,8 +159,8 @@ $newsEvents = $stmt->fetchAll();
                                     <p style="text-align: justify;" class="about-desc">Margdarshan Institute Sarangarh,
                                         offering the best computer classes, pre-nursing and pre-agriculture coaching
                                         <a href="#">Read More..</a> </p>
-                                         <!-- <a href="about-us.php">Read More..</a> </p> -->
-                                    <!-- <h2 style="color:#fff;">Sarangarh Best Computer Institute</h2>       
+                                         <a href="about-us.php">Read More..</a> </p>
+                                    <h2 style="color:#fff;">Sarangarh Best Computer Institute</h2>       
                                     <h2 style="color:#fff;">Computer Institutes in Sarangarh</h2>
                                     <h2 style="color:#fff;">Government Recognized Computer Training Center</h2>
                                     <h2 style="color:#fff;">Computer Education Training Institute in Sarangarh</h2>
@@ -180,7 +180,7 @@ $newsEvents = $stmt->fetchAll();
                                     <h2 style="color:#fff;">Margdarshan institute Pre Nursing Coaching in Sarangarh</h2>
                                     <h2 style="color:#fff;">Agriculture Entrance Coaching in Sarangarh</h2>
                                     <h2 style="color:#fff;">Agriculture exam Coaching in Sarangarh</h2>
-                                    <h2 style="color:#fff;">Agriculture Entrance exam Coaching in Sarangarh</h2> -->
+                                    <h2 style="color:#fff;">Agriculture Entrance exam Coaching in Sarangarh</h2>
                                 </div>
 
                             </div>
@@ -188,7 +188,7 @@ $newsEvents = $stmt->fetchAll();
                     </div>
                 </div>
             </div>
-            <!-- Notice Board -->
+         
             <div class="col-md-6 noticeboard-section">
                 <h2 class="section-title text-center mb-3">Notice Board</h2>
                 <div class="row">
@@ -223,13 +223,9 @@ $newsEvents = $stmt->fetchAll();
                     </div>
                 </div>
             </div>
-
-            <!-- Announcements -->
-
-
         </div>
     </div>
-</section>
+</section> -->
 
 
   <!-- Service Start -->

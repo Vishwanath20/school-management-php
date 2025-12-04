@@ -117,9 +117,9 @@ With a strong focus on <strong>personalized attention</strong>, <strong>career c
 </section>
 
 <style>
-.hero-section {
+/* .hero-section {
     background: linear-gradient(45deg, #2d87b4, #3399cc);
-}
+} */
 
 .card {
     transition: transform 0.3s ease;

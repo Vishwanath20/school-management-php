@@ -66,42 +66,10 @@ include  '../../include/header.php';
 
 
 
-
-<!-- Contact Section -->
-<section class="py-5">
-    <div class="container">
-        <div class="row align-items-center">
-            <div class="col-lg-6">
-                <h2 class="mb-4 text-dark">Visit Our Institute</h2>
-                <!-- <div class="mb-4">
-                    <p><i class="fas fa-map-marker-alt text-primary me-2"></i> <?php echo nl2br(htmlspecialchars($institute['address'])); ?></p>
-                    <p><i class="fas fa-phone text-primary me-2"></i> <?php echo htmlspecialchars($institute['phone']); ?></p>
-                    <p><i class="fas fa-envelope text-primary me-2"></i> <?php echo htmlspecialchars($institute['email']); ?></p>
-                    <p><i class="fas fa-clock text-primary me-2"></i> <?php echo htmlspecialchars($institute['working_hours']); ?></p>
-                </div> -->
-                <div class="mb-4">
-                    <p><i class="fas fa-map-marker-alt text-primary me-2"></i> Evergreen public school, Andola, Jashpur, Sarangarh</p>
-                    <p><i class="fas fa-phone text-primary me-2"></i> XXXXXXXXX</p>
-                    <p><i class="fas fa-envelope text-primary me-2"></i> info@epscg.in</p>
-                    <p><i class="fas fa-clock text-primary me-2"></i> Monday - Saturday: 9:00 AM - 3:00 PM</p>
-                </div>
-            </div>
-            <div class="col-lg-6">
-                <div class="map-container rounded-3 overflow-hidden">
-                   <iframe src=" <?php echo $institute['map_embed']; ?>" frameborder="0"></iframe>
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
-
-<!-- Call to Action -->
-
-
 <style>
-.hero-section {
+/* .hero-section {
     background: linear-gradient(45deg, #2d87b4, #3399cc);
-}
+} */
 
 .card {
     transition: transform 0.3s ease;

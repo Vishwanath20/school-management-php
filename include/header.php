@@ -122,17 +122,9 @@ if ($seo_data) {
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav ms-auto">
                     <li class="nav-item">
-                    <a class="nav-link active" href="#">Home</a>
-                        <!-- <a class="nav-link active" href="/index.php">Home</a> -->
+                    <a class="nav-link active" href="<?php echo $baseUrl; ?>index.php">Home</a>
+                     
                     </li>
-                   
-                    <li class="nav-item">
-                        <a class="nav-link" href="index.php#faculty">Faculty</a>
-                        <!-- <a class="nav-link active" href="#">Faculty</a> -->
-                    </li>
-                    <!-- <li class="nav-item">
-                        <a class="nav-link" href="freeresources.php">Free Resources</a>
-                    </li> -->
                     <li class="nav-item">
                     <!-- <a class="nav-link" href="#">Gallery</a> -->
                         <a class="nav-link" href="<?php echo $baseUrl; ?>photo-galery.php">Gallery</a>

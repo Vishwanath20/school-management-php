@@ -62,9 +62,9 @@ include  '../../include/header.php';
 </section>
 
 <style>
-.hero-section {
+/* .hero-section {
     background: linear-gradient(45deg, #2d87b4, #3399cc);
-}
+} */
 
 .card {
     transition: transform 0.3s ease;

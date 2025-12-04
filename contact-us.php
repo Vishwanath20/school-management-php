@@ -1,5 +1,6 @@
 <?php
 include 'include/header.php';
+$leads = isset($_GET['source']) ? $_GET['source'] : 'web';
 ?>
 
 <section id="contact" class="contact-section py-5 stats-section">

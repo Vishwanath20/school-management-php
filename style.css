@@ -214,12 +214,30 @@ a:hover {
 
 /* Hero Section */
 .hero-section {
-    background: linear-gradient(rgba(10, 61, 98, 0.8), rgba(10, 61, 98, 0.8)), url('/placeholder.svg?height=800&width=1600') no-repeat center center;
+  /*  background: linear-gradient(rgba(10, 61, 98, 0.8), rgba(10, 61, 98, 0.8)), url('/placeholder.svg?height=800&width=1600') no-repeat center center; */
+    background: var(--primary-color) ;
     background-size: cover;
     color: white;
     height: 80vh;
     display: flex;
     align-items: center;
+
+}
+
+/* Ensure hero section container allows image to expand */
+.hero-section .col-lg-6:last-child {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0;
+}
+
+.hero-section-image{
+    width: 100%;
+   height: 75vh;
+    max-height: 400px;
+    object-fit: cover;
+    display: block;
 }
 
 .hero-title {
@@ -380,7 +398,8 @@ a:hover {
 /* Why Choose Us Section */
 .why-choose-section{
     /* background: url('images/choose-lead-bg.png'); */
-    background-color: rebeccapurple;
+   /* background-color: rebeccapurple; */
+   background-color: var(--primary-color2);
 }
 .feature-card {
     background-color: white;
@@ -701,7 +720,7 @@ a:hover {
     /* background:url('images/eminent-bg.png') no-repeat center center;
 
     background-size: cover; */
-        background-color: var(--secondary-color);
+        background-color: var(--primary-color);
     color: white;
     padding: 80px 0 0;
 }
@@ -1107,6 +1126,10 @@ a:hover {
     .hero-section {
         height: 70vh;
     }
+
+    .hero-section-image {
+        max-height: 400px;
+    }
     
     .navbar-collapse {
         background-color: white;
@@ -1134,6 +1157,10 @@ a:hover {
     .hero-section {
         height: 60vh;
         text-align: center;
+    }
+
+    .hero-section-image {
+        max-height: 300px;
     }
     
     .section-title {
@@ -1193,6 +1220,10 @@ a:hover {
     .hero-section {
         height: auto !important;
     }
+
+    .hero-section-image {
+        max-height: 250px;
+    }
     
     .hero-buttons .btn {
         display: block;
@@ -1245,6 +1276,33 @@ a:hover {
 @keyframes smoothScroll {
     0% { transform: translateY(0); }
     100% { transform: translateY(-50%); }
+}
+
+
+.card {
+    transition: transform 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+}
+
+.map-container {
+    height: 400px;
+}
+
+.map-container iframe {
+    width: 100%;
+    height: 100%;
+    border: 0;
+}
+
+.fas {
+    transition: transform 0.3s ease;
+}
+
+.text-center:hover .fas {
+    transform: scale(1.1);
 }
 
 
